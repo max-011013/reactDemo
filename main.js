@@ -1,2 +1,3 @@
-import data from './sample.json'
-console.log(data)
+fetch('./sample.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
